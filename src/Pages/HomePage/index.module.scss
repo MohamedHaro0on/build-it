@@ -55,29 +55,14 @@
             font-size  : 1.5rem ;
         }
     }
-    P,
-    li {
+    P {
         font-size: 1.5rem;
-    }
-    .List {
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 75%;
-        margin: 20px auto;
-        li {
-            min-width: 50%;
-            padding: 15px 0px;
-            @media (max-width:674px) {
-                min-width : 100% ;
+        a {
+            color: #287a95;
+            text-decoration: underline !important;
+            &:active {
+                color: #ffbc58;
             }
-        }
-    }
-    p a {
-        color: #287a95;
-        text-decoration: underline !important;
-        &:active {
-            color: #ffbc58;
         }
     }
 }

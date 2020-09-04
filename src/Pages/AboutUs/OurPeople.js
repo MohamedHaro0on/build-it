@@ -1,5 +1,6 @@
 import React from 'react'
 import ClassNames from "./index.module.scss";
+import {SubTitle} from "../../UI/index";
 const discriptions = [
     "At buildit we have an open structure, which means that employees work within wide boundaries.",
     `The environment and culture, which is shaped by buildit’s people, is driven by several key factors including transparency, curiosity, inclusivity,
@@ -9,7 +10,7 @@ const discriptions = [
 ];
 const WhatWeDo = () => (
     <>
-        <h3 className={ClassNames.SubTitle}>How We Do it </h3>
+        <SubTitle>How We Do it </SubTitle>
         {discriptions.map((element, index) => {
             return (
                 <p className={ClassNames.Discription} key={index}>

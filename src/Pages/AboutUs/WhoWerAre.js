@@ -3,7 +3,7 @@ import SpaceMan from "../../Images/spaceman.svg";
 import Bull from "../../Images/bull.svg";
 import Cube from "../../Images/cube.svg";
 import r2d2 from "../../Images/r2d2.svg";
-import ClassNames from "./index.module.scss";
+import {List , SubTitle} from "../../UI/index";
 
 
 const WhoWerAre = () => {
@@ -33,8 +33,8 @@ const WhoWerAre = () => {
     
     return (
         <>
-            <h3 className={ClassNames.SubTitle}>Who we are </h3>
-            <ul className = {ClassNames.ListContainer}>
+            <SubTitle>Who we are </SubTitle>
+            <List>
                 {cards.map((card, index) => {
                     return (
                         <li key = {index}>
@@ -44,7 +44,7 @@ const WhoWerAre = () => {
                         </li>
                     )
                 })}
-            </ul>
+            </List>
         </>
     )
 }

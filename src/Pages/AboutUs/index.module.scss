@@ -7,34 +7,8 @@ $MainFontSize: 2.5rem;
         font-size: $MainFontSize;
     }
     // Starting The CSS for the What we do Page .
-    .SubTitle {
-        font-size: 1.75rem;
-        padding-bottom: 30px;
-    }
-    .ListContainer {
-        padding: 0px;
-        display: flex;
-        list-style: none;
-        flex-wrap: wrap;
-        font-size: 1.25rem;
-        li {
-            padding: 20px 10px;
-            width: 50%;
-            box-sizing: border-box;
-            text-align: center;
-            p {
-                max-width: 70%;
-                margin: 20px auto;
-                color: $MainBrownColor;
-                @media (max-width: 1069px) {
-                    max-width: 100%;
-                }
-            }
-            @media (max-width: 734px) {
-                width: 100%;
-            }
-        }
-    }
+
+
 
     // Starting the Css for the What We Do Page .
     .Discription {
@@ -58,23 +32,5 @@ $MainFontSize: 2.5rem;
     }
     .ITalic{
         font-style : italic ;
-    }
-    blockquote {
-        padding: 30px 0px;
-        span {
-            display: block;
-            width: 50%;
-            margin: auto;
-            font-weight: bolder;
-            font-size: 1.75rem;
-            line-height: 40px;
-            font-style: italic;
-            @media (max-width: 734px) {
-                width: 90%;
-            }
-            @media (max-width: 634px) {
-                font-size: 1.2rem;
-            }
-        }
     }
 }

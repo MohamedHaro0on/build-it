@@ -23,7 +23,7 @@ const Header = () => {
                 <button className={ClassNames.ToggleHeaderButton} onClick={ToggleHeaderHandler}><UnorderedListOutlined /></button>
             </h1>
             <ul className={ClassNames.RoutesList}>
-                {Routes.map((Route, index) => {
+                {Routes.map((Route) => {
                     return <li key={Route.title}><Link to={Route.url} >{Route.title}</Link></li>
                 })}
             </ul>

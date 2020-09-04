@@ -1,0 +1,20 @@
+
+.ListItem{
+    width : 50% ;
+    display : flex ;
+    flex-wrap : wrap ;
+    text-align : left !important ;
+    h4{
+        width : 100% ;
+        font-size : 1.5rem ;
+    }
+    img , p {
+        max-width : 40% ; 
+        width : 40% ;  
+        @media (max-width:510px) {
+            width:90% ;
+            max-width:90% ;
+            padding : 10px ;
+        }
+    }
+}
