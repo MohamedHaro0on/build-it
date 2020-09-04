@@ -1,0 +1,11 @@
+.AppContainer{
+     background-color : #F7F5F5 ;
+     padding : 10px ;
+     header  , main {
+        max-width : 75% ;
+        margin : auto ;
+        @media (max-width:818px) {
+            max-width : 95% ;
+        }
+     }
+}

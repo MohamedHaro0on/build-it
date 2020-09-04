@@ -1,0 +1,93 @@
+@import "../../App.module";
+.HomePageContainer {
+    text-align: center;
+    .OurSpecializationContainer {
+        font-family: "Cabin", sans-serif;
+        padding: 10px;
+        min-height: 50vh;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        h2 {
+            font-size: 2rem;
+            font-weight: 400;
+            @media (max-width:1662px) {
+                font-size  : 1.5rem ;
+            }
+        }
+        p {
+            color: $MainBrownColor;
+            font-size: 1.5rem;
+        }
+        a {
+            font-size: 1.5rem;
+            position: relative;
+            padding: 10px;
+            transition: all 0.3s;
+            color : inherit ;
+            text-decoration : none ;
+            z-index : 1; 
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                top: 85%;
+                bottom: 0px;
+                left: 0px;
+                background-color: #ff7913;
+                z-index: -1;
+                transition: all 0.3s;
+            }
+            &:hover::after {
+                top: 0px;
+            }
+        }
+    }
+}
+.OurPracticesContainer,
+.OurIndustreisContainer {
+    blockquote {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+        font-weight: 300;
+        @media (max-width:1662px) {
+            font-size  : 1.5rem ;
+        }
+    }
+    P,
+    li {
+        font-size: 1.5rem;
+    }
+    .List {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 75%;
+        margin: 20px auto;
+        li {
+            min-width: 50%;
+            padding: 15px 0px;
+            @media (max-width:674px) {
+                min-width : 100% ;
+            }
+        }
+    }
+    p a {
+        color: #287a95;
+        text-decoration: underline !important;
+        &:active {
+            color: #ffbc58;
+        }
+    }
+}
+
+.OurIndustreisContainer {
+    padding: 20px;
+    min-height: 50vh;
+    background-color: #c0bbbb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align  :Center ;
+}
