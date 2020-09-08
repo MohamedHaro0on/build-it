@@ -1,7 +1,9 @@
 import React from 'react'
 import ClassNames from "./index.module.scss";
 import {Link} from "react-router-dom";
-const OurSpecialization = (props) => {
+
+
+function OurSpecialization (props)  {
     return (
         <div className={ClassNames.OurSpecializationContainer}>
             <div>

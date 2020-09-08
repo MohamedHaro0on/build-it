@@ -6,6 +6,8 @@ import {Route , BrowserRouter as Router} from "react-router-dom";
 import HomePage from './Pages/HomePage';
 import AboutUs from "./Pages/AboutUs/index";
 import Locations from "./Pages/Locations/index"
+
+
 function App() {
   return (
     <Router>

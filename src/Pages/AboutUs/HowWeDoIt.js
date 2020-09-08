@@ -1,5 +1,5 @@
 import React from 'react'
-import {SubTitle} from "../../UI/index";
+import { SubTitle } from "../../UI/index";
 import ClassNames from "./index.module.scss";
 
 const discriptions = [
@@ -8,20 +8,22 @@ const discriptions = [
     "We approach each project and client as unique and we never start with a preconceived outcome or solution."
 ]
 
-const WhatWeDo = () => (
-    <>
-        <SubTitle>How We Do it </SubTitle>
-        {discriptions.map((element, index) => {
-            return (
-                <p className={ClassNames.Discription} key={index}>
-                    {element}
-                </p>
-            )
-        })}
-        <p className={`${ClassNames.Discription} ${ClassNames.ITalic}`}>
-            Read more about how we approach <a href="https://medium.com/buildit/org-change/home">continuous improvement and systems thinking</a>
-            on our Medium blog.
-        </p>
-    </>
-)
+function WhatWeDo() {
+    return (
+        <>
+            <SubTitle>How We Do it </SubTitle>
+            {discriptions.map((element, index) => {
+                return (
+                    <p className={ClassNames.Discription} key={index}>
+                        {element}
+                    </p>
+                )
+            })}
+            <p className={`${ClassNames.Discription} ${ClassNames.ITalic}`}>
+                Read more about how we approach <a href="https://medium.com/buildit/org-change/home">continuous improvement and systems thinking</a>
+                on our Medium blog.
+            </p>
+        </>
+    )
+}
 export default WhatWeDo;

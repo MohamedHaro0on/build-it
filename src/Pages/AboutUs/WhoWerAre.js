@@ -6,7 +6,7 @@ import r2d2 from "../../Images/r2d2.svg";
 import {List , SubTitle} from "../../UI/index";
 
 
-const WhoWerAre = () => {
+function WhoWerAre ()  {
 
     const cards = [
         {

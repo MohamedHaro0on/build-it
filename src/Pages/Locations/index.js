@@ -9,7 +9,7 @@ import Location6 from "../../Images/staticmap (6).jpg"
 import Location7 from "../../Images/staticmap.jpg"
 import { List, SubTitle } from "../../UI/index";
 
-const Locations = () => {
+function Locations () {
     const Cities = [
         { cityName: "Bangalore", image: Location1, address: "72 Electronic City Hosur Road Bengaluru 560100 India" },
         { cityName: "Edinburgh", image: Location2, address: "72 Electronic City Hosur Road Bengaluru 560100 India" },

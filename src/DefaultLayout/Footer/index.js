@@ -3,8 +3,8 @@ import ReactDom from "react-dom";
 import ClassNames from "./Footer.module.scss";
 import { HeartOutlined, TwitterOutlined, GithubOutlined, LinkedinOutlined } from "@ant-design/icons"
 
-const Footer = document.getElementById("Footer");
-const index = () => {
+const FooterDomNode = document.getElementById("Footer");
+function Footer  () {
     const socialMedia = [
         { icon: <TwitterOutlined />, url: "https://twitter.com/mohamed63935674" },
         { icon: <GithubOutlined />, url: "https://github.com/MohamedHaro0on" },
@@ -26,7 +26,7 @@ const index = () => {
                 </ul>
             </div>
         </footer>
-    ), Footer)
+    ), FooterDomNode)
 }
 
-export default index
+export default Footer

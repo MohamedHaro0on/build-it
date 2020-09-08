@@ -3,7 +3,8 @@ import ClassNames from "./index.module.scss";
 import ReactDom from "react-dom";
 import {List} from "../../UI/index";
 const DomNode = document.getElementById("OurIndustries")
-const OurIndustries = () =>{
+
+function OurIndustries  () {
     const ourIndustreis = [
         "Utilities" , "Charities" , "Finance" , "Healthcare" ,"Banking" , "Technology","Communications","Retail"
     ]

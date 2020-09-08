@@ -2,7 +2,8 @@ import React from 'react'
 import ClassNames from "./index.module.scss";
 import {Link} from "react-router-dom";
 import {List} from "../../UI/index";
-const OurPractices = ()=> {
+
+function  OurPractices  () {
     const ourPratices = ["Agile coaching","Lean UX" , "Engineering transformation" , "Experiential learning" ,"Design systems","Systems thinking"];
     return (
         <div className = {ClassNames.OurPracticesContainer}>

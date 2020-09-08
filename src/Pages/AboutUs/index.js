@@ -3,7 +3,7 @@ import WhoWerAre from './WhoWerAre'
 import ClassNames from "./index.module.scss";
 import WhatWeDo from './WhatWeDo';
 import HowWeDoIt from "./HowWeDoIt";
-const AboutUsPage = () => {
+function AboutUsPage () {
     return (
         <div className={ClassNames.AboutUsContainer}>
             <h2>AboutUs</h2>

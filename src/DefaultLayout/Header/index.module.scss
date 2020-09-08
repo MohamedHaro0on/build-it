@@ -10,6 +10,7 @@
     overflow : hidden ;
     transition : all .3s ;
     margin : auto ;
+
     .PageTitle {
         margin : 0px ;
         a {
@@ -74,4 +75,7 @@
 }
 .HeaderOpened{
     height :250px ;
+}
+.Active{
+    color : red !important;
 }
