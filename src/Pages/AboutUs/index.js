@@ -1,6 +1,6 @@
 import React from 'react'
 import WhoWerAre from './WhoWerAre'
-import ClassNames from "./index.module.scss";
+import ClassNames from "./AboutUs.module.scss";
 import WhatWeDo from './WhatWeDo';
 import HowWeDoIt from "./HowWeDoIt";
 function AboutUsPage () {

@@ -1,6 +1,6 @@
 import React from 'react'
-import { SubTitle } from "../../UI/index";
-import ClassNames from "./index.module.scss";
+import { SubTitle, Discription} from "../../UI/index";
+import ClassNames from "./AboutUs.module.scss";
 
 const discriptions = [
     "We are pragmatic partners who seek out the challenging work in all engagements, whether at enterprise scale or startup speed.",
@@ -14,15 +14,18 @@ function WhatWeDo() {
             <SubTitle>How We Do it </SubTitle>
             {discriptions.map((element, index) => {
                 return (
-                    <p className={ClassNames.Discription} key={index}>
+                    <Discription key={index}>
                         {element}
-                    </p>
+                    </Discription>
                 )
             })}
-            <p className={`${ClassNames.Discription} ${ClassNames.ITalic}`}>
-                Read more about how we approach <a href="https://medium.com/buildit/org-change/home">continuous improvement and systems thinking</a>
+            <Discription className={ClassNames.ITalic}>
+                Read more about how we approach
+                    <a href="https://medium.com/buildit/org-change/home">
+                    continuous improvement and systems thinking
+                    </a>
                 on our Medium blog.
-            </p>
+            </Discription>
         </>
     )
 }

@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom"
-import ClassNames from "./index.module.scss";
+import ClassNames from "./Header.module.scss";
 import { UnorderedListOutlined } from "@ant-design/icons"
 
 function  Header  ()  {
     const [HeaderClosed, ToggleHeader] = useState(true);
     const Routes = [
         { title: "About us", url: "/about-us" },
-        { title: "Carrers", url: "/carrers" },
+        { title: "Careers", url: "/careers" },
         { title: "Locations", url: "/locations" },
     ]
 

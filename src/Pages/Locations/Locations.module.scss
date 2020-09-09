@@ -1,6 +1,6 @@
 
 .ListItem{
-    width : 50% ;
+    width : 45% ;
     display : flex ;
     flex-wrap : wrap ;
     text-align : left !important ;
@@ -11,10 +11,15 @@
     img , p {
         max-width : 40% ; 
         width : 40% ;  
-        @media (max-width:510px) {
+        @media (max-width:880px) {
+            width:90%;
+            max-width: 90% ;
             padding : 10px ;
-            width:90% ;
-            max-width:90% ;
+        }
+        @media (max-width:510px) {
+            width:100% ;
+            max-width:100% ;
         }
     }
+
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import ClassNames from "./index.module.scss";
+import ClassNames from "./Locations.module.scss";
 import Location1 from "../../Images/staticmap (1).jpg"
 import Location2 from "../../Images/staticmap (2).jpg"
 import Location3 from "../../Images/staticmap (3).jpg"
@@ -21,7 +21,7 @@ function Locations () {
     ]
     return (
         <section>
-            <SubTitle > Locations </SubTitle>
+            <SubTitle> Locations </SubTitle>
             <List>
                 {Cities.map((city, index) => {
                     return (

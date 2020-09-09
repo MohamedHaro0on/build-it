@@ -1,6 +1,6 @@
 import React from 'react'
-import ClassNames from "./index.module.scss";
-import { SubTitle } from "../../UI/index";
+import ClassNames from "./AboutUs.module.scss";
+import { SubTitle , Discription } from "../../UI/index";
 const discriptions = [
     "At buildit we have an open structure, which means that employees work within wide boundaries.",
     `The environment and culture, which is shaped by buildit’s people, is driven by several key factors including transparency, curiosity, inclusivity,
@@ -14,15 +14,15 @@ function WhatWeDo() {
             <SubTitle>How We Do it </SubTitle>
             {discriptions.map((element, index) => {
                 return (
-                    <p className={ClassNames.Discription} key={index}>
+                    <Discription  key={index}>
                         {element}
-                    </p>
+                    </Discription>
                 )
             })}
-            <p className={`${ClassNames.Discription} ${ClassNames.ITalic}`}>
+            <Discription className={ClassNames.ITalic}>
                 We are part of the larger <a href="https://www.wipro.com/">Wipro</a>
                     network and partner with:
-                </p>
+                </Discription>
         </>
     )
 }

@@ -1,0 +1,102 @@
+@import "../App.module";
+.BlockQoute {
+    padding: 30px 0px;
+    span {
+        display: block;
+        width: 50%;
+        margin: auto;
+        font-weight: bolder;
+        font-size: 1.75rem;
+        line-height: 40px;
+        font-style: italic;
+        @media (max-width: 1271px) {
+            width: 90%;
+        }
+        @media (max-width: 746px) {
+            font-size: 1.2rem;
+            width: 100% ;
+        }
+    }
+}
+
+.SubTitle {
+    font-size: 1.75rem;
+}
+
+.ListContainer {
+    padding: 0px;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    font-size: 1.25rem;
+    max-width: 85% ;
+    margin : auto ;
+    li {
+        padding: 20px 10px;
+        width: 50%;
+        box-sizing: border-box;
+        text-align: center;
+        p {
+            max-width: 70%;
+            margin: 20px auto;
+            color: $MainBrownColor;
+            @media (max-width: 1069px) {
+                max-width: 100%;
+            }
+        }
+        @media (max-width: 734px) {
+            width: 100%;
+        }
+    }
+    @media (max-width: 734px) {
+        width: 100%;
+    }
+}
+
+.Discription {
+    font-size: 1.6rem;
+    color: $MainBrownColor;
+    max-width: 90%;
+    padding-bottom: 20px;
+    color: $MainBrownColor;
+    line-height: 40px;
+    a {
+        text-decoration: underline;
+        color: #012b3d;
+        font-weight: bolder;
+        padding: 5px;
+    }
+    @media (max-width: 1212px) {
+        max-width: 100%;
+        font-size: 1.2rem;
+        line-height: 30px;
+    }
+}
+
+.StyledAnchor {
+    text-align: center;
+    padding: 15px 0px;
+    a {
+        font-size: 1.5rem;
+        position: relative;
+        padding: 10px;
+        transition: all 0.3s;
+        color: inherit;
+        text-decoration: none;
+        z-index: 1;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            top: 85%;
+            bottom: 0px;
+            left: 0px;
+            background-color: #ff7913;
+            z-index: -1;
+            transition: all 0.3s;
+        }
+        &:hover::after {
+            top: 0px;
+        }
+    }
+}
