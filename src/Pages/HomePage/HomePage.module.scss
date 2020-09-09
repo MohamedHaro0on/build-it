@@ -52,4 +52,7 @@
     align-items: center;
     justify-content: center;
     text-align  :Center ;
+    @media (max-width:734px) {
+        min-height : 80vh ;
+    }
 }

@@ -1,14 +1,12 @@
 import React from 'react'
 import { SubTitle, Discription, BlockQuote } from "../../UI/index";
+import ClassNames from './Careers.module.scss';
 
 
 function CareersDiscription() {
 
     const pageContent = [
-        {
-            component: SubTitle,
-            elementContent: "Careers"
-        },
+  
         {
             component: Discription,
             elementContent: `Doing things differently requires strength of character, empathy for those around you, good judgement, as well as being able to explain why to do something differently in the customer's language and at the right time.`
@@ -29,7 +27,7 @@ function CareersDiscription() {
     ]
 
     return (
-        <>
+        <div>
             {pageContent.map((element) => {
                 return (
                     <element.component>{element.elementContent}</element.component>
@@ -39,7 +37,7 @@ function CareersDiscription() {
                 If you have any questions please reach out to us at:
                  <a href="mailto:talent-buildit@wipro.com">talent-buildit@wipro.com</a>
             </Discription>
-        </>
+        </div>
     )
 }
 

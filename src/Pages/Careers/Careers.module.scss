@@ -1,2 +1,7 @@
+@import "../../App.module";
+
 .Container{
+    .Title{
+        font-size : $MainFontSize ;
+    }
 }

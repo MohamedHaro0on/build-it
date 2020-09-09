@@ -1,8 +1,9 @@
 import React from 'react'
 import {StyledAnchor} from "../../UI/index";
+import ClassNames from './Careers.module.scss';
 function HiringProcess() {
     return (
-        <div>
+        <div >
             <StyledAnchor> <a href = "#OurHiringProcess">Our hiring process</a></StyledAnchor>
         </div>
     )

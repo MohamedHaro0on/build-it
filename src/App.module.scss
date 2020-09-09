@@ -2,9 +2,9 @@
      background-color : #F7F5F5 ;
      padding : 10px ;
      header  , main {
-        max-width : 75% ;
+        max-width : 65% ;
         margin : auto ;
-        @media (max-width:818px) {
+        @media (max-width:969px) {
             max-width : 95% ;
         }
      }

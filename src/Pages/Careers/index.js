@@ -7,6 +7,7 @@ function Careers() {
 
     return (
         <section className={ClassNames.Container}>
+            <h2 className = {ClassNames.Title}> Careers </h2>
             <CareersDiscription/>
             <HiringProcess/>
         </section>

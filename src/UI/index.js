@@ -8,8 +8,11 @@ function BlockQuote(props) {
     )
 }
 
+function Title(props) {
+    return <h2 className={`${ClassNames.Title} ${props.className}`}>{props.children}</h2>
+}
 function SubTitle(props) {
-    return <h3 className={`${ClassNames.SubTitle} ${props.className}`}>{props.children}</h3>
+    return <h4 className={`${ClassNames.SubTitle} ${props.className}`}>{props.children}</h4>
 }
 
 
