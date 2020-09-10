@@ -4,4 +4,37 @@
     .Title{
         font-size : $MainFontSize ;
     }
+    .ListContainer{
+        padding :0px ;
+        list-style : none ;
+        flex-wrap: wrap ;
+        li{
+            padding : 10px ;
+            display : flex ;
+            flex-wrap : wrap ;
+            p{
+                min-width: 30% ;
+                font-size : 1.5rem ;
+                @media (max-width:500px) {
+                    min-width : 100% ;
+                }
+            }
+            .ApplicationsContainer{
+                min-width: 50% ;
+                display : flex;
+                flex-wrap: wrap ;
+                font-size : 1.2rem ;
+                a{
+                    min-width: 50% ;
+                    padding : 15px;
+                    box-sizing : border-box;
+                    font-weight : bolder ;
+                    color: #012b3d;
+                    @media (max-width:500px) {
+                        min-width : 100% ;
+                    }
+                }
+            }
+        }
+    }
 }

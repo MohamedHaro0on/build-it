@@ -1,6 +1,5 @@
 import React from 'react'
-import { SubTitle, Discription, BlockQuote } from "../../UI/index";
-import ClassNames from './Careers.module.scss';
+import { Discription, BlockQuote } from "../../UI/index";
 
 
 function CareersDiscription() {
@@ -28,9 +27,9 @@ function CareersDiscription() {
 
     return (
         <div>
-            {pageContent.map((element) => {
+            {pageContent.map((element , index) => {
                 return (
-                    <element.component>{element.elementContent}</element.component>
+                    <element.component key = {index}>{element.elementContent}</element.component>
                 )
             })}
             <Discription>
