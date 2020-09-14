@@ -1,40 +1,101 @@
 @import "../../App.module";
-
-.Container{
-    .Title{
-        font-size : $MainFontSize ;
+$my-sec-counter: 0;
+.Container {
+    .Title {
+        font-size: $MainFontSize;
     }
-    .ListContainer{
-        padding :0px ;
-        list-style : none ;
-        flex-wrap: wrap ;
-        li{
-            padding : 10px ;
-            display : flex ;
-            flex-wrap : wrap ;
-            p{
-                min-width: 30% ;
-                font-size : 1.5rem ;
-                @media (max-width:500px) {
-                    min-width : 100% ;
+    .ListContainer {
+        padding: 0px;
+        list-style: none;
+        flex-wrap: wrap;
+        li {
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            p {
+                min-width: 30%;
+                font-size: 1.5rem;
+                @media (max-width: 500px) {
+                    min-width: 100%;
                 }
             }
-            .ApplicationsContainer{
-                min-width: 50% ;
-                display : flex;
-                flex-wrap: wrap ;
-                font-size : 1.2rem ;
-                a{
-                    min-width: 50% ;
-                    padding : 15px;
-                    box-sizing : border-box;
-                    font-weight : bolder ;
+            .ApplicationsContainer {
+                min-width: 50%;
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 1.2rem;
+                a {
+                    min-width: 50%;
+                    padding: 15px;
+                    box-sizing: border-box;
+                    font-weight: bolder;
                     color: #012b3d;
-                    @media (max-width:500px) {
-                        min-width : 100% ;
+                    @media (max-width: 500px) {
+                        min-width: 100%;
                     }
                 }
             }
         }
+    }
+    .HiringProcessList {
+        padding: 0px;
+        list-style: none;
+        counter-reset: my-sec-counter;
+        margin: 20px 0px ;
+        li {
+            width: 50%;
+            position: relative;
+            h3 {
+                font-size : 1.4rem ;
+            }
+            h3 ,  p {
+                padding: 10px 10px 00px 40px;
+                margin: 0px;
+                @media (max-width: 782px) {
+                    padding: 20px;
+                }
+            }
+            &:nth-child(even) {
+                border-left: dashed 1px #ff7913;
+                margin-left: auto;
+                &:after {
+                    left: -15px;
+                }
+            }
+            &:nth-child(odd) {
+                @media (min-width:783px) {
+                    border-right: dashed 1px #ff7913;
+                }
+                @media (max-width: 782px) {
+                    border-left: dashed 1px #ff791f;
+                    border-right: none;
+                }
+                &:after {
+                    right: -15px;
+                    @media (max-width: 782px) {
+                        left: -15px;
+                    }
+                }
+            }
+            &:after {
+                counter-increment: my-sec-counter;
+                content: counter(my-sec-counter);
+                position: absolute;
+                max-width: fit-content ;
+                min-height: 20px;
+                background-color: #ff7913;
+                top: -35px;
+                padding: 10px;
+                font-weight: bolder;
+            }
+            @media (max-width: 782px) {
+                width: 90%;
+                margin: auto;
+            }
+        }
+    }
+    .ContactUs{
+        margin : 10px 0px; 
+        text-align : center ;
     }
 }

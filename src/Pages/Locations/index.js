@@ -7,9 +7,9 @@ import Location4 from "../../Images/staticmap (4).jpg"
 import Location5 from "../../Images/staticmap (5).jpg"
 import Location6 from "../../Images/staticmap (6).jpg"
 import Location7 from "../../Images/staticmap.jpg"
-import { List, SubTitle } from "../../UI/index";
+import { List, Title } from "../../UI/index";
 
-function Locations () {
+function Locations() {
     const Cities = [
         { cityName: "Bangalore", image: Location1, address: "72 Electronic City Hosur Road Bengaluru 560100 India" },
         { cityName: "Edinburgh", image: Location2, address: "72 Electronic City Hosur Road Bengaluru 560100 India" },
@@ -21,7 +21,7 @@ function Locations () {
     ]
     return (
         <section>
-            <SubTitle> Locations </SubTitle>
+            <Title> Locations </Title>
             <List>
                 {Cities.map((city, index) => {
                     return (

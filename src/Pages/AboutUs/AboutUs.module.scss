@@ -1,11 +1,7 @@
 @import "../../App.module";
-$MainFontSize: 2.5rem;
 
 .AboutUsContainer {
     padding-top: 30px 10px;
-    h2 {
-        font-size: $MainFontSize;
-    }
     .ITalic{
         font-style : italic ;
     }

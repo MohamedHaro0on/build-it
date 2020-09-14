@@ -2,23 +2,23 @@ import React from 'react'
 import ClassNames from "./UI.module.scss";
 function BlockQuote(props) {
     return (
-        <blockquote className={`${ClassNames.BlockQoute} ${props.className}`}>
+        <blockquote className={ClassNames.BlockQoute}>
             <span>{props.children}</span>
         </blockquote>
     )
 }
 
 function Title(props) {
-    return <h2 className={`${ClassNames.Title} ${props.className}`}>{props.children}</h2>
+    return <h2 className={ClassNames.Title}>{props.children}</h2>
 }
 function SubTitle(props) {
-    return <h4 className={`${ClassNames.SubTitle} ${props.className}`}>{props.children}</h4>
+    return <h4 className={ClassNames.SubTitle}>{props.children}</h4>
 }
 
 
 function List(props) {
     return (
-        <ul className={`${ClassNames.ListContainer} ${props.className}`}>
+        <ul className={ClassNames.ListContainer}>
             {props.children}
         </ul>
     )
@@ -26,7 +26,7 @@ function List(props) {
 
 function Discription(props) {
     return (
-        <p className={`${props.className} ${ClassNames.Discription}`}> {props.children} </p>
+        <p className={ClassNames.Discription}> {props.children} </p>
     )
 }
 function StyledAnchor(props) {
@@ -37,4 +37,4 @@ function StyledAnchor(props) {
     )
 }
 
-export { BlockQuote, SubTitle, List, Discription , StyledAnchor };
+export { BlockQuote, SubTitle, List, Discription , StyledAnchor  , Title};
