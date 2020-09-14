@@ -1,5 +1,5 @@
 @import "../../App.module";
-
+$MainBreakPoint : 674px ;
 .HeaderContainer {
     display: flex;
     align-items: center !important;
@@ -21,7 +21,7 @@
         }
         .ToggleHeaderButton {
             display: none;
-            @media (max-width: 674px) {
+            @media (max-width: $MainBreakPoint) {
                 display: inline;
                 outline: none;
                 color: $MainBlueColor;
@@ -32,27 +32,21 @@
             }
         }
         // Media Query for the Page Title .
-        @media (max-width: 674px) {
+        @media (max-width: $MainBreakPoint) {
             width: 100%;
             display: flex;
             justify-content: space-between;
         }
     }
     .RoutesList {
-        list-style: none;
         display: flex;
         color: $MainBrownColor;
-        padding: 0px;
         flex-wrap: wrap;
-        margin: 0px;
         li {
             font-size: 1.5rem;
             font-family: "Roboto", sans-serif;
             padding: 10px;
-            @media (max-width: 674px) {
-                width: 100%;
-            }
-            @media (max-width: 674px) {
+            @media (max-width: $MainBreakPoint) {
                 width: 100%;
             }
             a {
@@ -68,28 +62,19 @@
         & :hover {
             color: #8b8080;
         }
-        // Media Query for the Routes List .
-        @media (max-width: 674px) {
-            width: 100%;
-        }
-    }
-
-    // Media Query for the Header .
-    @media (max-width: 674px) {
-        padding: 0px;
     }
 }
 
 // The Height of the Header when it is closed .
 .HeaderClosed {
-    @media (min-width: 674px) {
+    @media (min-width: $MainBreakPoint) {
         height: 81px;
     }
-    @media (max-width: 674px) {
+    @media (max-width: $MainBreakPoint) {
         height: 60px;
     }
 }
 // The Normal height Of the Header .
 .HeaderOpened {
-    height: 250px;
+    height: 270px;
 }

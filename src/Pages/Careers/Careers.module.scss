@@ -1,12 +1,6 @@
 @import "../../App.module";
-$my-sec-counter: 0;
 .Container {
-    .Title {
-        font-size: $MainFontSize;
-    }
     .ListContainer {
-        padding: 0px;
-        list-style: none;
         flex-wrap: wrap;
         li {
             padding: 10px;
@@ -38,8 +32,6 @@ $my-sec-counter: 0;
         }
     }
     .HiringProcessList {
-        padding: 0px;
-        list-style: none;
         counter-reset: my-sec-counter;
         margin: 20px 0px ;
         li {

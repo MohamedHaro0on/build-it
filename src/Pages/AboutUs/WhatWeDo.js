@@ -25,4 +25,4 @@ function WhatWeDo() {
         </>
     )
 }
-export default WhatWeDo;
+export default WhatWeDo; 

@@ -1,6 +1,6 @@
 import React from 'react'
 import ClassNames from "./Careers.module.scss";
-import { Title, Discription } from '../../UI';
+import { Title, Discription, SubTitle } from '../../UI';
 function HiringProcess() {
     const hiringSteps = [
         {
@@ -38,7 +38,6 @@ function HiringProcess() {
                     return (
                         <li key={index}>
                             <h3>{step.title}</h3>
-
                             <Discription>{step.discription}</Discription>
                         </li>
                     )
