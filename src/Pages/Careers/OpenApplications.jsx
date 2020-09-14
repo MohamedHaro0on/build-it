@@ -58,7 +58,7 @@ function OpenApplications() {
     ]
     return (
         <>
-            <StyledAnchor> <a href="#OurOpenApplications">Our hiring process</a></StyledAnchor>
+            <StyledAnchor> <a href="#HiringProccess">Our hiring process</a></StyledAnchor>
             <ul className={ClassNames.ListContainer}>
 
                 {jobApplicaions.map((job, index) => {

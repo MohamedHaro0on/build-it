@@ -1,4 +1,7 @@
 @import "../../App.module";
+$BorderColor : #ff7913 ;
+
+
 .Container {
     .ListContainer {
         flex-wrap: wrap;
@@ -31,6 +34,7 @@
             }
         }
     }
+    
     .HiringProcessList {
         counter-reset: my-sec-counter;
         margin: 20px 0px ;
@@ -48,7 +52,7 @@
                 }
             }
             &:nth-child(even) {
-                border-left: dashed 1px #ff7913;
+                border-left: dashed 1px $BorderColor;
                 margin-left: auto;
                 &:after {
                     left: -15px;
@@ -56,7 +60,7 @@
             }
             &:nth-child(odd) {
                 @media (min-width:783px) {
-                    border-right: dashed 1px #ff7913;
+                    border-right: dashed 1px $BorderColor;
                 }
                 @media (max-width: 782px) {
                     border-left: dashed 1px #ff791f;
@@ -75,7 +79,7 @@
                 position: absolute;
                 max-width: fit-content ;
                 min-height: 20px;
-                background-color: #ff7913;
+                background-color: $BorderColor;
                 top: -35px;
                 padding: 10px;
                 font-weight: bolder;
