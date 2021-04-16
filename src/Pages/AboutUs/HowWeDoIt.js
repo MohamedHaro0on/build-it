@@ -1,18 +1,13 @@
 import React from 'react'
-import { SubTitle, Discription} from "../../UI/index";
+import { SubTitle, Discription } from "../../UI/index";
 import ClassNames from "./AboutUs.module.scss";
+import { AboutUsDiscriptions } from "../../Data";
 
-const discriptions = [
-    "We are pragmatic partners who seek out the challenging work in all engagements, whether at enterprise scale or startup speed.",
-    "We are problem solvers who hone our craft through experimentation, continuous improvement and systems thinking.",
-    "We approach each project and client as unique and we never start with a preconceived outcome or solution."
-]
-
-function WhatWeDo() {
+const WhatWeDo = () => {
     return (
         <>
             <SubTitle>How We Do it </SubTitle>
-            {discriptions.map((element, index) => {
+            {AboutUsDiscriptions.map((element, index) => {
                 return (
                     <Discription key={index}>
                         {element}
@@ -21,7 +16,7 @@ function WhatWeDo() {
             })}
             <Discription className={ClassNames.ITalic}>
                 Read more about how we approach
-                    <a href="https://medium.com/buildit/org-change/home">
+                    <a href="https://medium.com/buildit/org-change/home" target="_blank" aria-label="visit our blog" rel="noopener noreferrer" >
                     continuous improvement and systems thinking
                     </a>
                 on our Medium blog.

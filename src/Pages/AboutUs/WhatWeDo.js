@@ -2,7 +2,7 @@ import React from 'react'
 import { BlockQuote, SubTitle , Discription} from "../../UI/index";
 import ClassNames from "./AboutUs.module.scss";
 
-function WhatWeDo() {
+const WhatWeDo = ()=> {
     return (
         <>
             <SubTitle SubTitle> What we do</SubTitle>

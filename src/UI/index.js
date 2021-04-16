@@ -1,6 +1,6 @@
 import React from 'react'
 import ClassNames from "./UI.module.scss";
-function BlockQuote(props) {
+const BlockQuote = (props) => {
     return (
         <blockquote className={ClassNames.BlockQoute}>
             <span>{props.children}</span>
@@ -8,15 +8,15 @@ function BlockQuote(props) {
     )
 }
 
-function Title(props) {
+const Title = (props) => {
     return <h2 className={ClassNames.Title}>{props.children}</h2>
 }
-function SubTitle(props) {
+const SubTitle = (props) => {
     return <h4 className={ClassNames.SubTitle}>{props.children}</h4>
 }
 
 
-function List(props) {
+const List = (props) => {
     return (
         <ul className={ClassNames.ListContainer}>
             {props.children}
@@ -24,12 +24,12 @@ function List(props) {
     )
 }
 
-function Discription(props) {
+const Discription = (props) => {
     return (
         <p className={ClassNames.Discription}> {props.children} </p>
     )
 }
-function StyledAnchor(props) {
+const StyledAnchor = (props) => {
     return (
         <div className={ClassNames.StyledAnchor}>
             {props.children}
@@ -37,4 +37,4 @@ function StyledAnchor(props) {
     )
 }
 
-export { BlockQuote, SubTitle, List, Discription , StyledAnchor  , Title};
+export { BlockQuote, SubTitle, List, Discription, StyledAnchor, Title };

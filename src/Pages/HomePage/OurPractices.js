@@ -2,9 +2,9 @@ import React from 'react'
 import ClassNames from "./HomePage.module.scss";
 import {Link} from "react-router-dom";
 import {List , Discription} from "../../UI/index";
+import {ourPratices} from "../../Data";
 
-function  OurPractices  () {
-    const ourPratices = ["Agile coaching","Lean UX" , "Engineering transformation" , "Experiential learning" ,"Design systems","Systems thinking"];
+const  OurPractices  =()=> {
     return (
         <div className = {ClassNames.OurPracticesContainer}>
             <blockquote>Our multidisciplinary consultants leverage engineering best practices, tools, methodologies and new ways of working to deliver true business outcomes for our clients.</blockquote>

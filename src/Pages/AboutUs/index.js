@@ -4,10 +4,11 @@ import ClassNames from "./AboutUs.module.scss";
 import WhatWeDo from './WhatWeDo';
 import HowWeDoIt from "./HowWeDoIt";
 import { Title } from '../../UI';
-function AboutUsPage () {
+
+
+const AboutUsPage = () =>{
     return (
         <div className={ClassNames.AboutUsContainer}>
-            {/* <h2>AboutUs</h2> */}
             <Title>AboutUs</Title>
             <WhoWerAre />
             <WhatWeDo />

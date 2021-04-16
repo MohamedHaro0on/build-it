@@ -3,7 +3,7 @@ import ClassNames from "./HomePage.module.scss";
 import {Link} from "react-router-dom";
 import {StyledAnchor} from "../../UI/index";
 
-function OurSpecialization (props)  {
+const OurSpecialization = () => {
     return (
         <div className={ClassNames.OurSpecializationContainer}>
             <div>

@@ -5,7 +5,7 @@ import OurPractices from './OurPractices';
 import OurIndustries from './OurIndustries';
 
 
-function HomePage (props){
+const HomePage = () =>{
     return (
         <section className={ClassNames.HomePageContainer}>
             <OurSpecialization />
